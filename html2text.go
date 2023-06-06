@@ -337,7 +337,7 @@ func (ctx *textifyTraverseContext) handleTableElement(node *html.Node) error {
 			options := ctx.options.PrettyTablesOptions
 			table.SetAutoFormatHeaders(options.AutoFormatHeader)
 			table.SetAutoWrapText(options.AutoWrapText)
-			table.SetReflowDuringAutoWrap(options.ReflowDuringAutoWrap)
+			//table.SetReflowDuringAutoWrap(options.ReflowDuringAutoWrap)
 			table.SetColWidth(options.ColWidth)
 			table.SetColumnSeparator(options.ColumnSeparator)
 			table.SetRowSeparator(options.RowSeparator)
@@ -345,7 +345,7 @@ func (ctx *textifyTraverseContext) handleTableElement(node *html.Node) error {
 			table.SetHeaderAlignment(options.HeaderAlignment)
 			table.SetFooterAlignment(options.FooterAlignment)
 			table.SetAlignment(options.Alignment)
-			table.SetColumnAlignment(options.ColumnAlignment)
+			//table.SetColumnAlignment(options.ColumnAlignment)
 			table.SetNewLine(options.NewLine)
 			table.SetHeaderLine(options.HeaderLine)
 			table.SetRowLine(options.RowLine)
